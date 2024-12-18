@@ -44,6 +44,25 @@ Parâmetros do Body:
 }
 ```
 
+**Listar Usuários**
+```
+GET /
+[
+  {
+  "id": "7ba94b19-218e-4976-82bb-6879d341781d",
+  "name": "texto (mín 3 caracteres)",
+  "email": "valido@email.com",
+  "cep": "12345678",
+  },
+  {
+  "id": "05e27436-0297-42c8-a764-104098cf0c46",
+  "name": "texto (mín 3 caracteres)",
+  "email": "valido2@email.com",
+  "cep": "12345678",
+  }
+]
+
+```
 
 **Regras de Validação**
 
