@@ -1,4 +1,5 @@
 import {IsEmail, IsString, MaxLength, MinLength} from 'class-validator'
+import { IsValidCEP } from 'src/validation/CepValidation'
 
 export class CreateUserDTO {
     @IsString({
@@ -18,6 +19,9 @@ export class CreateUserDTO {
     })
     @MaxLength(8, {
         message: 'O CEP tem no máximo 8 dígitos'
+    })
+    @IsValidCEP({
+        message: 'Digite um CEP válido'
     })
     cep: string
 }
